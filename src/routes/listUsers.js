@@ -1,6 +1,4 @@
-const express = require("express");
-
-const router = express.Router()
+const router = require('../utils/router');
 
 const listUsers = (users) => {
 	router.get('/users', (_req, res) => {

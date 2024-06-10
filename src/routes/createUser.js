@@ -1,8 +1,6 @@
-const express = require('express');
 const { v4: uuidv4 } = require('uuid');
+const router = require('../utils/router');
 const userSchema = require('../schemas/userSchema')
-
-const router = express.Router()
 
 const createUsersRoute = (users) => {
 	router.post('/users', (req, res) => {

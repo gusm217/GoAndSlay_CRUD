@@ -1,7 +1,5 @@
-const express = require("express");
+const router = require('../utils/router');
 const userSchema = require('../schemas/userSchema')
-
-const router = express.Router()
 
 const updateUser = (users) => {
 	router.put('/users/:id', (req, res) => {
