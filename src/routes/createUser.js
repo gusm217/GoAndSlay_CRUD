@@ -8,7 +8,6 @@ const createUsersRoute = (users) => {
 		const user = { id: uuidv4(), name, email, age };
 
 		const { error } = userSchema.validate(user);
-
 		if (error) {
 			return res.status(400).json({ message: error.details[0].message });
 		}
